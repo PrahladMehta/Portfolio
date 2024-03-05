@@ -30,7 +30,7 @@ const Home = function () {
       <div className="flex flex-row gap-x-5 mt-32 mb-16 h-auto ">
         {/* Left */}
         <div className=" flex flex-col  items-baseline gap-y-12 ml-8 ">
-          <div className="w-32 h-2 bg-[#4770FF]"></div>
+          <div className="w-32 h-[6px] bg-[#4770FF]"></div>
 
           <h1 className="font-bold text-5xl text-[#3A395E] flex">
             <div className="anime ">👋 </div>
@@ -60,7 +60,7 @@ const Home = function () {
 
       {/* Skills */}
       <div className="m-8 flex flex-col gap-y-20 ">
-        <div className="w-32 h-2 bg-[#4770FF] mt-8"></div>
+        <div className="w-32 h-[6px] bg-[#4770FF] mt-8"></div>
 
         <h1 className="font-bold text-6xl text-[#3A395E]"> My Skills</h1>
 
@@ -69,9 +69,9 @@ const Home = function () {
         <div className="flex gap-y-8 gap-x-20 items-center flex-wrap m-2">
           {/* HTML */}
 
-          <div className="group  text-center  font-bold hover:scale-105 duration-200 cursor-pointer  w-[100px]">
+          <div className="group  text-center text-xl font-bold hover:scale-105 duration-200 cursor-pointer  w-[100px]">
             <ImHtmlFive className="text-6xl group-hover:text-[#4770FF] mx-auto" />
-            <p className="text-center ">HTML</p>
+            <p className="text-center  ">HTML</p>
           </div>
 
           {/* CSS */}

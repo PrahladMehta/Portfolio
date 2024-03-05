@@ -78,18 +78,20 @@ function App() {
         </button>
       </nav>
 
-      <Routes>
-        <Route path="/" element={<MainHeader></MainHeader>}>
-          <Route path="/" element={<Home></Home>} />
-          <Route path="/skills" element={<Skills></Skills>} />
-          <Route path="/about" element={<About></About>} />
-        </Route>
-      </Routes>
+      <div className="max-w-[1200px]">
+        <Routes>
+          <Route path="/" element={<MainHeader></MainHeader>}>
+            <Route path="/" element={<Home></Home>} />
+            <Route path="/skills" element={<Skills></Skills>} />
+            <Route path="/about" element={<About></About>} />
+          </Route>
+        </Routes>
+      </div>
 
       <div className="mx-10 mt-32  mb-20 flex justify-between ">
         <div className="basis-5/12 flex flex-col items-baseline gap-y-5">
           <h1 className="text-2xl font-bold text-[#3A395E]">
-            Thank you for visiting !
+            Thank you for visiting!
           </h1>
           <p>
             Got question ,comment or feedback?
