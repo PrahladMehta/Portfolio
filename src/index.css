@@ -28,3 +28,9 @@
     transform: rotate(0deg);
   }
 }
+
+.active {
+  background-color: rgba(170,207,250,0.3);
+  font: 600;
+  border-radius: 12px;
+}

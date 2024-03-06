@@ -24,7 +24,9 @@ import { SiPython } from "react-icons/si";
 import { FaGithubSquare } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
 
-const Home = function () {
+const Home = function ({setSelect}) {
+
+  setSelect("home");
   return (
     <div>
       <div className="flex flex-row gap-x-5 mt-32 mb-16 h-auto ">

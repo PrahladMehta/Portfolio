@@ -1,6 +1,6 @@
 import "./index.css";
 
-import Skills from "../src/components/Skills";
+import Project from "../src/components/Project";
 
 import Home from "../src/components/Home";
 
@@ -17,10 +17,6 @@ function App() {
   const nav = useNavigate();
   const [select, setSelect] = useState("home");
 
-  useEffect(() => {
-    nav("/");
-  }, []);
-
   return (
     <div className="overflow-x-hidden select-none mx-auto max-w-[1200px]">
       {/* navigation bar */}
@@ -30,47 +26,33 @@ function App() {
         </div>
 
         <div className="flex  gap-x-5 text-lg items-center mr-20 ">
-          <div
-            onClick={() => {
-              setSelect("home");
-              nav("/");
-            }}
-            className={`hover:bg-[rgba(170,207,250,0.3)] px-4 py-2 rounded-xl cursor-pointer ${
-              select === "home" && "bg-[rgba(170,207,250,0.3)] font-[600]"
-            } duration-200
-            } `}
-          >
-            Home
-          </div>
-
-          <div>
+          <NavLink to="/">
             <div
-              onClick={() => {
-                setSelect("about");
-                nav("/about");
-              }}
-              className={`hover:bg-[rgba(170,207,250,0.3)] px-4 py-2 rounded-xl cursor-pointer ${
-                select === "about" && "bg-[rgba(170,207,250,0.3)]  font-[600]"
-              } duration-200
+              className={`hover:bg-[rgba(170,207,250,0.3)] px-4 py-2 rounded-xl cursor-pointer 
+             duration-200
+             `}
+            >
+              Home
+            </div>
+          </NavLink>
+
+          <NavLink to="/about">
+            <div
+              className={`hover:bg-[rgba(170,207,250,0.3)] px-4 py-2 rounded-xl cursor-pointer
                 `}
             >
               About
             </div>
-          </div>
+          </NavLink>
 
-          <div>
+          <NavLink to="/project">
             <div
-              onClick={() => {
-                setSelect("project");
-                nav("/project");
-              }}
-              className={`hover:bg-[rgba(170,207,250,0.3)] px-4 py-2 rounded-xl cursor-pointer ${
-                select === "project" && "bg-[rgba(170,207,250,0.3)] font-[600] "
-              }`}
+              className={`hover:bg-[rgba(170,207,250,0.3)] px-4 py-2 rounded-xl cursor-pointer 
+              `}
             >
               Project
             </div>
-          </div>
+          </NavLink>
         </div>
 
         <button className=" text-xl rounded-xl shadow-[0_3px_10px_1px_#e5e5ea]  py-3 px-6 font-semibold hover:scale-105 duration-400 ">
@@ -81,9 +63,15 @@ function App() {
       <div className="max-w-[1200px]">
         <Routes>
           <Route path="/" element={<MainHeader></MainHeader>}>
-            <Route path="/" element={<Home></Home>} />
-            <Route path="/skills" element={<Skills></Skills>} />
-            <Route path="/about" element={<About></About>} />
+            <Route path="/" element={<Home setSelect={setSelect}></Home>} />
+            <Route
+              path="/project"
+              element={<Project setSelect={setSelect}></Project>}
+            />
+            <Route
+              path="/about"
+              element={<About setSelect={setSelect}></About>}
+            />
           </Route>
         </Routes>
       </div>
