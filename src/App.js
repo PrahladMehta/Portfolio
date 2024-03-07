@@ -18,7 +18,7 @@ function App() {
   const [select, setSelect] = useState("home");
 
   return (
-    <div className="overflow-x-hidden select-none mx-auto max-w-[1200px]">
+    <div className="overflow-x-hidden select-none mx-auto max-w-[1200px] ">
       {/* navigation bar */}
       <nav className="flex justify-between items-center  p-1 text-[#4770FF] w-[1100px] mx-auto mt-4  ">
         <div className="text-3xl font-bold hover:scale-105 duration-100  text-black">

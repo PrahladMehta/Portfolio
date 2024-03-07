@@ -4,12 +4,12 @@ const About = function ({ setSelect }) {
   setSelect("about");
   return (
     <div>
-      <div className="flex flex-row  gap-24 mt-32 mb-16 h-auto mx-12 flex-wrap lg:flex-nowrap ">
+      <div className="flex flex-row  gap-24 mt-32 mb-16 h-auto mx-12 flex-wrap lg:flex-nowrap  ">
         <img src={image} className="rounded-[32px] max-h-[450px] my-auto" />
         <div className="flex flex-col gap-y-7">
           <div className="h-[6px] bg-blue-500 w-24 text-[#3A395E]"></div>
           <p className="text-5xl my-3">
-            👀 <span className=" font-bold ">About me</span>
+            👀 <span className=" font-bold text-[#3A395E]">About me</span>
           </p>
 
           <p className="text-xl leading-8">
