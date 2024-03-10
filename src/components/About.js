@@ -1,18 +1,23 @@
 import Scroll from "./Scroll";
 import image from "./image/profile-pic.png";
+import { useEffect } from "react";
 const About = function ({ setSelect }) {
-  setSelect("about");
+
+  useEffect(() => {
+    setSelect("about");
+  }, []);
+ 
   return (
     <div>
       <div className="flex flex-row  gap-24 mt-32 mb-16 h-auto mx-12 flex-wrap lg:flex-nowrap  ">
         <img src={image} className="rounded-[32px] max-h-[450px] my-auto" />
         <div className="flex flex-col gap-y-7">
           <div className="h-[6px] bg-blue-500 w-24 text-[#3A395E]"></div>
-          <p className="text-5xl my-3">
+          <p className="text-3xl md:text-5xl my-3">
             👀 <span className=" font-bold text-[#3A395E]">About me</span>
           </p>
 
-          <p className="text-xl leading-8">
+          <p className="text-lg leading-8">
             I am from Uttarakhand 📌, currenlty persuing BCA(Bachelor of
             Computer Application) 🎓 from Dev Bhoomi Uttarakhand University
             (DBUU) Dehradun 🏛.

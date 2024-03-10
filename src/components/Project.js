@@ -1,14 +1,20 @@
 import data from "./Projectdata";
 import { FaGreaterThan } from "react-icons/fa";
+import { useEffect } from "react";
 const Project = function ({ setSelect }) {
-  setSelect("project");
+  useEffect(() => {
+    setSelect("project");
+  }, []);
+
   console.log(data);
   return (
     <div>
-      <div className="flex flex-col mt-32 mb-16 h-auto mx-8">
+      <div className="flex flex-col mt-16 md:mt-32 mb-16 h-auto mx-auto md:w-[95%] w-[90%]">
         {" "}
         <div className="w-32 h-[6px] bg-[#4770FF] rounded-2xl"></div>
-        <h1 className="text-5xl text-[#3A395E] font-bold mt-10">My Projects</h1>
+        <h1 className="text-3xl md:text-5xl text-[#3A395E] font-bold mt-10 ">
+          My Projects
+        </h1>
         <div className="w-full mx-auto flex flex-wrap justify-center">
           {data.map((val) => {
             return (
