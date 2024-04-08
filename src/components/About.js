@@ -1,12 +1,11 @@
 import Scroll from "./Scroll";
-import image from "./image/profile-pic.png";
+import image from "./image/IMG-20230923-WA0059-removebg.png";
 import { useEffect } from "react";
 const About = function ({ setSelect }) {
-
   useEffect(() => {
     setSelect("about");
   }, []);
- 
+
   return (
     <div>
       <div className="flex flex-row  gap-24 mt-32 mb-16 h-auto mx-12 flex-wrap lg:flex-nowrap  ">
@@ -34,7 +33,7 @@ const About = function ({ setSelect }) {
 
           <a
             className="text-center"
-            href="https://drive.google.com/file/d/1P-V4RXAhoFSqfNUjxh0E9Tjll-oMJesk/view"
+            href="https://drive.google.com/file/d/15wAllVAF5CnGyYbl2Onm4KMYyDOp6AtO/view?usp=sharing"
           >
             <button className="  w-30 mx-auto px-8 py-4 bg-[#4770FF] text-white text-xl  font-bold rounded-2xl hover:scale-105 shadow-[0_3px_17px_0_#e5e5ea] duration-300">
               Resume
@@ -43,11 +42,11 @@ const About = function ({ setSelect }) {
         </div>
       </div>
 
-      <div className="w-[1000px] mx-auto mt-32 flex">
+      <div className="w-[87%] mx-auto mt-32 flex justify-between flex-wrap gap-8">
         <div className="text-[#3A395E] flex flex-col gap-y-4">
           <div className="h-[6px] bg-blue-500 w-24 rounded-lg "></div>
           <h1 className="text-5xl font-bold mt-4">Education</h1>
-          <p1>Catching Up with My Learning Journey</p1>
+          <p>Catching Up with My Learning Journey</p>
         </div>
         <div>
           <Scroll></Scroll>

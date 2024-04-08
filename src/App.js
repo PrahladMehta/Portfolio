@@ -2,22 +2,16 @@ import "./index.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
 import Project from "../src/components/Project";
-
 import Home from "../src/components/Home";
-
 import About from "../src/components/About";
-
-import MainHeader from "../src/components/MainHeader";
-
 import { useNavigate } from "react-router-dom";
-
 import { Route, Routes, NavLink } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function App() {
   const nav = useNavigate();
   const [select, setSelect] = useState("home");
-  const [hamburger, setHamburger] = useState(false);
+  const [hamburger, setHamburger] = useState(true);
 
   return (
     <div className="overflow-x-hidden select-none mx-auto max-w-[1150px] lg:p-4">
@@ -48,6 +42,7 @@ function App() {
           <div
             onClick={() => {
               setSelect("home");
+              setHamburger(true);
               nav("/");
             }}
             className={` cursor-pointer ${
@@ -61,6 +56,7 @@ function App() {
             <div
               onClick={() => {
                 setSelect("about");
+                setHamburger(true);
                 nav("/about");
               }}
               className={` cursor-pointer ${
@@ -75,6 +71,7 @@ function App() {
             <div
               onClick={() => {
                 setSelect("project");
+                setHamburger(true);
                 nav("/project");
               }}
               className={` cursor-pointer ${
@@ -120,12 +117,10 @@ function App() {
         </div>
 
         <a
-          href="mailto:prahladsinghmehta@gmail.com"
-          className="lg:block hidden"
+          href="mailto:prahladsinghmehta22@gmail.com"
+          className="lg:block hidden text-xl rounded-xl shadow-[0_3px_10px_1px_#e5e5ea]  py-3 px-6 font-semibold hover:scale-105 duration-400 "
         >
-          <button className=" text-xl rounded-xl shadow-[0_3px_10px_1px_#e5e5ea]  py-3 px-6 font-semibold hover:scale-105 duration-400 ">
-            Contact
-          </button>
+          Contact
         </a>
       </nav>
 
@@ -153,15 +148,16 @@ function App() {
             <br />
             Feel free to reach out and contact me .
           </p>
-          <a href="mailto:prahladsinghmehta@gmail.com">
-            <button className="px-8 py-4 bg-[#4770FF] text-white text-xl  font-bold rounded-2xl hover:scale-105 shadow-[0_3px_17px_0_#e5e5ea] duration-300">
-              Contact
-            </button>
+          <a
+            href="mailto:prahladsinghmehta22@gmail.com"
+            className="px-8 py-4 bg-[#4770FF] text-white text-xl  font-bold rounded-2xl hover:scale-105 shadow-[0_3px_17px_0_#e5e5ea] duration-300"
+          >
+            Contact
           </a>
         </div>
 
         <div className="basis-6/12 flex gap-y-4  flex-col">
-          <h className="text-blue-600 text-lg font-bold">Navigation</h>
+          <h1 className="text-blue-600 text-lg font-bold">Navigation</h1>
 
           <div className="flex gap-y-2 flex-col">
             <div
