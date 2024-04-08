@@ -150,7 +150,7 @@ function App() {
           </p>
           <a
             href="mailto:prahladsinghmehta22@gmail.com"
-            className="px-8 py-4 bg-[#4770FF] text-white text-xl  font-bold rounded-2xl hover:scale-105 shadow-[0_3px_17px_0_#e5e5ea] duration-300"
+            className="px-8 py-4 mt-5 bg-[#4770FF] text-white text-xl  font-bold rounded-2xl hover:scale-105 shadow-[0_3px_17px_0_#e5e5ea] duration-300"
           >
             Contact
           </a>

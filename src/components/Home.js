@@ -26,16 +26,15 @@ import { SiPostman } from "react-icons/si";
 import { useEffect } from "react";
 
 const Home = function ({ setSelect }) {
-
   useEffect(() => {
     setSelect("home");
   }, []);
-  
+
   return (
     <div className=" w-full">
       <div className="flex flex-row mt-12  md:mt-32 mb-16 h-auto flex-wrap-reverse w-full">
         {/* Left */}
-        <div className=" flex flex-col   gap-y-12  w-[90%] md:w-5/12 min-w-[350px] mx-auto">
+        <div className=" flex flex-col   gap-y-12  w-[90%] md:w-5/12 min-w-[350px]  mx-7 md:mx-0">
           <div className="w-32 h-[6px] bg-[#4770FF]"></div>
 
           <h1 className="font-bold text-3xl md:text-5xl text-[#3A395E] flex">

@@ -8,7 +8,7 @@ const About = function ({ setSelect }) {
 
   return (
     <div>
-      <div className="flex flex-row  gap-24 mt-32 mb-16 h-auto mx-12 flex-wrap lg:flex-nowrap  ">
+      <div className="flex flex-row  gap-24 mt-32 mb-16 h-auto mx-7 md:mx-12 flex-wrap lg:flex-nowrap  ">
         <img src={image} className="rounded-[32px] max-h-[450px] my-auto" />
         <div className="flex flex-col gap-y-7">
           <div className="h-[6px] bg-blue-500 w-24 text-[#3A395E]"></div>

@@ -18,8 +18,12 @@ const Project = function ({ setSelect }) {
             return (
               <div key={val.id}>
                 <a href={val.gitlink}>
-                  <div className=" mt-16  md:mt-20 lg:mt-32  md:w-[350px] lg:w-[380px]  w-[330px] rounded-2xl shadow-lg hover:scale-105  text-[#6E6D8F] hover:shadow-xl mx-4  md:mx-5 lg:mx-10  cursor-pointer group duration-700">
-                    <img src={val.img} className="w-full h-[250px] " alt=""/>
+                  <div className=" mt-16  md:mt-20 lg:mt-32  md:w-[350px] lg:w-[380px]  w-[300px] rounded-2xl shadow-lg hover:scale-105  text-[#6E6D8F] hover:shadow-xl mx-4  md:mx-5 lg:mx-10  cursor-pointer group duration-700">
+                    <img
+                      src={val.img}
+                      className="w-full  h-[220px] md:h-[250px] "
+                      alt=""
+                    />
 
                     <div className="flex flex-col justify-between gap-y-3 p-7   md:h-[130px] lg:h-[150px] ">
                       <h1 className="text-xl font-bold ">{val.title}</h1>
