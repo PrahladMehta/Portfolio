@@ -36,7 +36,7 @@ export default function Scroll() {
             Intermediate from
             <span className="text-blue-600">
               {" "}
-              Smt K.B.Memorial.Intercollage
+              Smt K.J.Memorial.Intercollage
             </span>
           </p>
         </div>
