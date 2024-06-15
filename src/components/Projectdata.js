@@ -1,6 +1,6 @@
 import image from "./image/Apple-Weather-app.jpg";
 import image2 from "./image/Razorpay.jpg"
-import image3 from "./image/testomonial.jpg"
+import image3 from "./image/chat-app.png"
 import image4 from "./image/e-commerce.png"
 const data = [
   {
@@ -17,8 +17,8 @@ const data = [
   },
   {
     id: 3,
-    gitlink: "https://github.com/PrahladMehta/Testimonial",
-    title:"Testiomnial",
+    gitlink: "https://github.com/PrahladMehta/Chat-application",
+    title:"REAL-TIME CHAT APPLICATION",
     img:image3
   },{
     id:4,

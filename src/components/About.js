@@ -33,7 +33,7 @@ const About = function ({ setSelect }) {
 
           <a
             className="text-center"
-            href="https://drive.google.com/file/d/15wAllVAF5CnGyYbl2Onm4KMYyDOp6AtO/view?usp=sharing"
+            href="https://drive.google.com/file/d/1POf0wkmYe3HJbR1DXfJ7jFl6c3rsom9T/view?usp=sharing"
           >
             <button className="  w-30 mx-auto px-8 py-4 bg-[#4770FF] text-white text-xl  font-bold rounded-2xl hover:scale-105 shadow-[0_3px_17px_0_#e5e5ea] duration-300">
               Resume
