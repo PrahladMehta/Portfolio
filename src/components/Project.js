@@ -16,7 +16,7 @@ const Project = function ({ setSelect }) {
         <div className="w-full mx-auto flex flex-wrap justify-center ">
           {data.map((val) => {
             return (
-              <div key={val.id}>
+              <div key={val.id} className="project-animation">
                 <a href={val.gitlink}>
                   <div className=" mt-16  md:mt-20 lg:mt-32  md:w-[350px] lg:w-[380px]  w-[300px] rounded-2xl shadow-lg hover:scale-105  text-[#6E6D8F] hover:shadow-xl mx-4  md:mx-5 lg:mx-10  cursor-pointer group duration-700">
                     <img

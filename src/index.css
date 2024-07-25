@@ -188,3 +188,16 @@
    transform:translateX(0);
   }
 }
+
+.project-animation{
+    animation:project-anime 500ms ease;
+}
+
+@keyframes project-anime{
+  0%{
+     transform:scale(0);
+  }
+  100%{
+    transform:scale(1);
+  }
+}
