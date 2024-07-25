@@ -12,7 +12,7 @@ const data = [
   {
     id: 2,
     gitlink: "https://github.com/PrahladMehta/Razorpay-Clone",
-    title:"RAZORPYA-CLONE",
+    title:"RAZORPAY",
     img:image2
   },
   {
@@ -23,7 +23,7 @@ const data = [
   },{
     id:4,
     gitlink:"https://github.com/PrahladMehta/E-Commerce-Site-",
-    title:"E-Commerce",
+    title:"E-COMMERCE",
     img:image4
   }
 ];
