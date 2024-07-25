@@ -37,9 +37,9 @@ const Home = function ({ setSelect }) {
         <div className=" flex flex-col   gap-y-12  w-[90%] md:w-5/12 min-w-[350px]  mx-7 md:mx-0">
           <div className="w-32 h-[6px] bg-[#4770FF]"></div>
 
-          <h1 className="font-bold text-3xl md:text-5xl text-[#3A395E] flex">
+          <h1 className="font-bold text-3xl md:text-5xl text-[#3A395E] flex  name-animation">
             <div className="anime ">👋 </div>
-            <div>
+            <div className="">
               Hi, I'm {"  "}
               <span className="text-[#4770FF] text-4xl md:text-6xl">
                 Prahlad
@@ -47,7 +47,7 @@ const Home = function ({ setSelect }) {
             </div>
           </h1>
 
-          <p className="text-xl md:text-2xl leading-10 text-[#6E6D8F]">
+          <p className="text-xl md:text-2xl leading-10 text-[#6E6D8F] description-animation">
             Crafting digital experiences with precision and creativity,
             <br />I am a web developer fueled by logical reasoning and
             analytical prowess.
@@ -68,7 +68,7 @@ const Home = function ({ setSelect }) {
         <img
           src={Jupitor}
           alt="plante"
-          className="w-[48%] min-w-[350px] mx-auto"
+          className="w-[48%] min-w-[350px] mx-auto image-jupitor-anime"
         ></img>
       </div>
 

@@ -11,6 +11,47 @@
   animation-duration: 1000ms;
 }
 
+.name-animation{
+
+   animation:name-anime 1 1000ms ease-in;
+
+}
+ 
+
+@keyframes name-anime{
+
+   0%{
+    opacity:0;
+     transform:translateY(-100px);
+
+   }
+   10%{
+    opacity:1;
+   }
+   30%{
+    transform:translateY(-40px);
+   }
+   45%{
+    transform: translateY(0);
+   }
+   60%{
+    transform:translateY(-30px) ;
+   }
+   75%{
+    transform: translateY(0);
+   }
+
+   90%{
+    transform:translateY(-20px);
+   }
+
+   100%{
+    transform:translateY(0);
+    
+   }
+
+}
+
 @keyframes hey {
   0% {
     transform: rotate(0deg);
@@ -60,4 +101,90 @@
   background-color: rgba(170, 207, 250, 0.3);
   font-weight: 600;
   border-radius: 12px;
+}
+
+
+.description-animation{
+      animation:des-anime 1 500ms ease-in;
+      overflow:hidden;
+
+}
+
+@keyframes des-anime{
+    
+   0%{
+    opacity:0;
+    transform:translateY(200px);
+   }
+
+   1%{
+    opacity:1;
+   }
+
+   100%{
+    transform: trnaslateY(0);
+   }
+
+
+
+}
+
+.image-jupitor-anime{
+  animation:jupitor-anime 1 500ms ease-in
+   
+}
+
+@keyframes jupitor-anime{
+    0%{
+      opacity:0;
+      transform:translateX(400px);
+    }
+    10%{
+      opacity:1;
+    }
+    100%{
+      transform:translateY(0);
+
+    }
+
+
+
+}
+
+
+.about-des{
+   animation: about-des-anime 1 600ms ease;
+}
+
+@keyframes about-des-anime{
+     0%{
+      opacity:0;
+      transform:translateX(400px);
+
+     }
+     10%{
+      opacity:1;
+     }
+     100%{
+      transform:translateX(0);
+     }
+}
+
+.about-image{
+  animation: about-img-anime 1 600ms ease;
+
+}
+
+@keyframes about-img-anime{
+  0%{
+   opacity:0;
+   transform:translateX(-400px);
+
+  }
+  10%{
+   opacity:1;
+  }
+  100%{
+   transform:translateX(0);
+  }
 }
