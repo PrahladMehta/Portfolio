@@ -9,7 +9,11 @@ const About = function ({ setSelect }) {
   return (
     <div>
       <div className="flex flex-row  gap-24 mt-32 mb-16 h-auto mx-7 md:mx-12 flex-wrap lg:flex-nowrap  ">
-        <img src={image} className="rounded-[32px] max-h-[450px] my-auto about-image" alt="myimage"/>
+        <img
+          src={image}
+          className="rounded-[32px] max-h-[450px] my-auto about-image"
+          alt="myimage"
+        />
         <div className="flex flex-col gap-y-7 about-des">
           <div className="h-[6px] bg-blue-500 w-24 text-[#3A395E]"></div>
           <p className="text-3xl md:text-5xl my-3">
@@ -17,20 +21,25 @@ const About = function ({ setSelect }) {
           </p>
 
           <p className="text-lg leading-8">
-          I am from Uttarakhand 📌 and have completed my BCA (Bachelor of Computer Application) 🎓 from Dev Bhoomi Uttarakhand University (DBUU) Dehradun 🏛
+            I am from Uttarakhand 📌 and have completed my BCA (Bachelor of
+            Computer Application) 🎓 from Dev Bhoomi Uttarakhand University
+            (DBUU) Dehradun 🏛
             <br />
             <br />
-            I'm always eager to explore new technologies and methodologies. Committed to continuous learning and growth, I thrive in dynamic, collaborative environments where I can contribute my expertise and make a meaningful impact. Let's connect and explore how we can work together to achieve our goals!
-             <br />
-             <br />
-           Apart from my professional life, I enjoy playing games 🏏, watching movies 🎬, anime 🦊, and reading books 📘.
+            I'm always eager to explore new technologies and methodologies.
+            Committed to continuous learning and growth, I thrive in dynamic,
+            collaborative environments where I can contribute my expertise and
+            make a meaningful impact. Let's connect and explore how we can work
+            together to achieve our goals!
+            <br />
+            <br />
+            Apart from my professional life, I enjoy playing games 🏏, watching
+            movies 🎬, anime 🦊, and reading books 📘.
           </p>
-
-
 
           <a
             className="text-center"
-            href="https://drive.google.com/file/d/1POf0wkmYe3HJbR1DXfJ7jFl6c3rsom9T/view?usp=sharing"
+            href="https://drive.google.com/file/d/1xlmXRCTNKFm4f1-24a9CAB2wvvPjFd2i/view"
           >
             <button className="  w-30 mx-auto px-8 py-4 bg-[#4770FF] text-white text-xl  font-bold rounded-2xl hover:scale-105 shadow-[0_3px_17px_0_#e5e5ea] duration-300">
               Resume
